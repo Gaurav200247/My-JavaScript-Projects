@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/icon.jpeg" >
+<link rel="stylesheet" href="modal.css">
+<body>
+  <div id="modal-show-back">
+    <button id="modal-show" onclick="openmodal()" >
+        Click Here
+    </button> 
+</div>
+
+  
+    <!-- modal background -->
+    <div id="modal-background" onclick="modalclose()">
+
+        <!-- modal-container -->
+        <div id="modal-container">
+            
+            <!-- modal header -->
+            <div id="modal-header">
+                <h1>MODAL PROJECT</h1>
+                <i class="fa fa-close fa-2x" onclick="modalclose()"></i>
+            </div>
+
+            <!-- modal content -->
+            <div id="modal-content">
+                <p>Hello! this is a Modal</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid commodi blanditiis ipsam mollitia velit sed illum quo iure consequuntur amet esse adipisci, sint ut saepe error dicta beatae quod.</p>
+                <p>click anywhere or close btn or go back btn to close modal</p>
+            </div>
+
+            <!-- modal footer -->
+            <div id="modal-footer">
+                    <button id="closebtn" onclick="modalclose()">
+                        Go Back
+                    </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>

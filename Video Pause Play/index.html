@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="titileimage.png">
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="video-player">
+        <h1>Video Player</h1>
+        <div class="color-overlay"></div>
+        <div class="video-container">
+            <video autoplay muted loop id="video">
+                <source src="video.mp4">
+            </video>
+        </div>
+        <div class="buttons">
+            <button id="controlbtn">Pause</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

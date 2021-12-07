@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Carousel.css">
+<body>
+    <h1 id="heading">STRAW HATS CAROUSEL</h1>
+
+    <div id="Carousel">
+     
+        <div class="container">
+     
+            <!-- SLIDE BUTTON LEFT -->
+            <div class="slidebtns">
+                <button id="leftbtn" onclick="left()">
+                    <i class="fa fa-chevron-left fa-2x"></i>
+                </button>
+            </div>
+
+            <!-- PHOTOS -->
+            <div id="all-pics">
+                <img class="pics" src="pics/stop.png" alt="stop">
+                
+                <img class="pics" id="flag" src="pics/merry.png" alt="merry">
+                <img class="pics" src="pics/0_flag.png" alt="flag">
+                <img class="pics" src="pics/1_Luffy.jpg" alt="luffy">
+                <img class="pics" src="pics/2_Zoro.jpg" alt="zoro">
+                <img class="pics" src="pics/3_Nami.jpg" alt="nami">
+                <img class="pics" src="pics/4_Ussop.jpg" alt="ussop">
+                <img class="pics" src="pics/5_Sanji.jpg" alt="sanji">
+                <img class="pics" src="pics/6_Chopper.jpg" alt="chopper">
+                <img class="pics" src="pics/7_Robin.jpg" alt="robin">
+                <img class="pics" src="pics/8_Franky.jpg" alt="franky">
+                <img class="pics" src="pics/9_Brook.jpg" alt="brook">
+                <img class="pics" src="pics/10_Jinbei.jpg" alt="jinbei">
+                <img class="pics" id="sunny" src="pics/sunny.png" alt="sunny">
+
+                <img class="pics" src="pics/stop.png" alt="stop">
+            </div>
+            
+            <!-- SLIDE BUTTON RIGHT -->
+            <div class="slidebtns">
+                <button id="rightbtn" onclick="right()">
+                    <i class="fa fa-chevron-right fa-2x"></i>
+                </button>
+            </div>
+        
+        </div>
+
+        
+        <!-- INFORMATION -->
+        <div class="NAME">
+            <h1 id="name">The Going Merry</h1>
+        </div>
+
+        <!-- MOREINFO LINKS -->
+        <div class="INFO">
+            <h2 id="info">Welcome to the STRAW HATS CAROUSEL hope you enjoy 😄</div>
+    </div>
+    <script src="Carousel.js"></script>
+</body>
+</html>

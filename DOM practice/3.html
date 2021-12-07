@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #AnimationContainer{
+        height: 400px;
+        width: 400px;
+        background-color: tomato;
+        position: relative;    }
+    #box{
+        height: 100px;
+        width: 100px;
+        background-color: seagreen;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #heading{
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    #box2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 300px;   
+        background-color: black; 
+        cursor: pointer;
+    }
+    #box2heading{
+        text-align: center;
+        padding: 20px;
+        color: cornflowerblue;
+    }
+</style>
+<body>
+    <!-- mouseup and mousedown are used here  -->
+    <div id="box2"  onmouseup="change2()" onmousedown="reset2()">
+        <h2 id="box2heading">click here</h2>   
+    </div>
+
+
+     <!-- mouseover and mouseout are used here  -->
+
+    <button onclick="move()"  >MOVE</button>
+    <div id="AnimationContainer">
+        <div id="box" onmouseover="change()" onmouseout="reset()" onclick="show(this)">
+            <h1 id="heading">BOX</h1>
+        </div>
+    </div>
+    <script>
+        
+        var box=document.getElementById("box")
+        var h1=document.getElementById("heading")
+        var h2=document.getElementById("box2heading")
+        var pos=0;
+
+        function move() 
+        {
+            var m=null
+            clearInterval(m);
+            m=setInterval(() => {
+                if (pos==300) {
+                    clearInterval(m);
+                }else{
+                    pos++
+                    box.style.top=pos+"px";                 //leaves margin from top
+                    box.style.left=pos+"px";                //leaves margin from left
+                }
+            }, 5);    
+        }
+
+
+
+        function reset2() {
+            h2.innerHTML="THANKS"
+        }
+
+        function change2() {
+            h2.innerHTML="YAMETE KUDASAI !!"
+        }
+
+
+
+        function reset() {
+            h1.innerHTML="BOX"
+        }
+
+        function change() {
+            h1.innerHTML="HI !"
+        }
+
+        //text changes to Hello when clicked
+        // function show(id) {
+        //     id.innerHTML="Hello"
+        // }
+
+        //displays date when clicked
+        // function show(id) {              
+        //     document.write(Date())
+        // }
+    </script>
+</body>
+</html>

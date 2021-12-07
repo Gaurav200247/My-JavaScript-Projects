@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="navbar.css">
+<body>
+    <nav>
+        <!-- logo -->
+        <div id="logo">
+            <img src="logo.PNG" alt="logo">
+        </div>
+
+        <!-- links -->
+        <div id="links-list">
+            <li class="links-items">Home</li>
+            <li class="links-items">Projects</li>
+            <li class="links-items">Notes</li>
+            <li class="links-items">About Us</li>
+        </div>
+
+        <!-- social media icons -->
+        <div id="socialmedia">
+            <div class="instagram">
+                <i class="fa fa-instagram fa-2x"></i>
+            </div>
+            <div class="facebook">
+                <i class="fa fa-facebook-official fa-2x"></i>
+            </div>
+            <div class="telegram">
+                <i class="fa fa-telegram fa-2x"></i>
+            </div>
+            <div class="twitter">
+                <i class="fa fa-twitter fa-2x"></i>
+            </div>
+        </div>
+
+        <!-- toggle button -->
+        <div id="togglebtn" onclick="show()">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+    </nav>
+
+    <!-- toggled links list -->
+    <div id="block" style="display: flex;justify-content: flex-end;">
+        <div id="toggled-links-list">
+            <li class="toggled-links-items">Home</li>
+            <li class="toggled-links-items">Projects</li>
+            <li class="toggled-links-items">Notes</li>
+            <li class="toggled-links-items">About Us</li>
+            <li class="toggled-links-items-social">
+                <i class="fa fa-telegram fa-2x"></i>
+                <i class="fa fa-twitter fa-2x"></i>
+                <i class="fa fa-instagram fa-2x"></i>
+                <i class="fa fa-facebook-official fa-2x"></i>
+            </li>
+        </div>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>

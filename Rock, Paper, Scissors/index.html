@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<!-- Icon -->
+<link rel="shortcut icon" href="./pngegg.png">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/ff8a115eb5.js" crossorigin="anonymous"></script>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        Rock-Paper-Scissors
+    </header>
+
+    <main>
+        <div class="score-container">
+
+            <!-- USER LABEL-->
+            <div class="user label">USER</div>
+
+
+            <!-- SCORE STARTS-->
+            <div class="score">
+                <!-- USER SCORE -->
+                <h1 class="user-score">00</h1>
+
+                    <h3 class="colon">:</h3>
+                
+                    <!-- COMP SCORE -->
+                <h1 class="comp-score">00</h1> 
+            </div>
+            <!-- SCORE ENDS -->
+
+
+            <!-- COMP LABEL-->
+            <div class="comp label">COMP</div>
+
+        </div>
+
+        <h1 class="alert default">Want to play Rock-Paper-Scissors with me.<br> Clik On the Move you want to make <span style="color: yellow;">😃</span></h1>
+
+        <div class="moves">
+            <!-- ROCK -->
+            <button class="rock">
+                <i class="fas fa-hand-rock fa-4x"></i>
+            </button>
+            
+            <!-- PAPER -->
+            <button class="paper">
+                <i class="fas fa-hand-paper fa-4x"></i>
+            </button>
+            
+            <!-- SCISSORS -->
+            <button class="scissors">
+                <i class="fas fa-hand-scissors fa-4x"></i>
+            </button>
+
+        </div>
+
+        <h4 class="info">MAKE YOUR MOVE</h4>
+    </main>
+
+   
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>

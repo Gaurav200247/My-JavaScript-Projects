@@ -1,0 +1,71 @@
+{
+    "strawhats":[
+        {
+            "name" : "stop",
+            "info" : "stop"
+        },
+        {
+            "name" : "The Going Merry",
+            "info" : "Welcome to the STRAW HATS CAROUSEL hope you enjoy 😄"
+        },
+        {
+            "name" : "Straw Hats",
+            "info" : "The Straw Hat Pirates, also known as the Mugiwara Pirates, Straw Hat Crew or simply the Straw Hats, are an infamous and incredibly powerful rising pirate crew that originated from the East Blue, but have various members from different areas."
+        },
+        {
+            "name":"Monkey D Luffy",
+            "info" : "Monkey D. Luffy, also known as \" Straw Hat Luffy\" and commonly as \"Straw Hat\", is the main protagonist of the manga and anime, One Piece. He is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates, as well as one of its top fighters. His lifelong dream is to become the Pirate King by finding the legendary treasure left behind by the late Gol D. Roger. He believes that being that being the Pirate King means having the most freedom in the world."
+        },
+        {
+            "name":"Roronoa Zoro",
+            "info" : "Roronoa Zoro, nicknamed \"Pirate Hunter\" Zoro, is a fictional character in the One Piece franchise created by Eiichiro Oda. In the story, Pirate Hunter Zoro is the first crewmate to join Monkey D. Luffy's crew after he is saved from being executed at the Marine Base by Captain Morgan."
+        },
+        {
+            "name":"Nami",
+            "info" : "Nami is a fictional character in the One Piece franchise created by Eiichiro Oda. She is based on Ann and Silk, two characters from Oda's previous manga Romance Dawn. She is introduced as a thief and pickpocket who possesses cartographical, meteorological, and navigational skills."
+        },
+        {
+            
+            "name":"God Ussop",
+            "info" : "\"God\" Usopp is the sniper of the Straw Hat Pirates. He is the fourth member of the crew and the third to join, doing so at the end of the Syrup Village Arc. Although he left the crew during the Water 7 Arc, he rejoined at the end of the Post-Enies Lobby Arc. Usopp is the son of Yasopp and Banchina."
+        },
+        {
+            
+            "name":"Vinsmoke Sanji",
+            "info" : "\"Black Leg\" Sanji, born as Vinsmoke Sanji, is the cook of the Straw Hat Pirates. He is the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc."
+        },
+        {
+            
+            "name":"Tony Tony Chopper",
+            "info" : "Tony Tony Chopper, also known as \"Cotton Candy Lover\" Chopper, is the doctor of the Straw Hat Pirates. He is the sixth member of the crew and the fifth to join, doing so at the end of the Drum Island Arc."
+        },
+        {
+            
+            "name":"Nico Robin",
+            "info" : "Nico Robin is a fictional character and one of the main female protagonists appearing in the manga series One Piece, created by manga artist Eiichiro Oda."
+        },
+        {
+            
+            "name":"Franky",
+            "info" : "Franky is one of the main characters in One Piece and the shipwright of the Straw Hat Pirates. He is a 36-year-old cyborg from Water 7 and was introduced in the story as the leader of the Franky Family, a group of ship dismantlers."
+        },
+        {
+            
+            "name":"Brook",
+            "info" : "Brook aka Dead Bones later Soul King is the musician of the Straw Hat Pirates and one of the main characters of One Piece. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle."
+        },
+        {
+            
+            "name":"Jinbe",
+            "info" : "\"Knight of the Sea\" Jinbe is the helmsman of the Straw Hat Pirates. He is the tenth member of the crew and the ninth to join, doing so during the Wano Country Arc. Jinbe is a whale shark fish-man and a powerful master of Fish-Man Karate."
+        },
+        {
+            "name" : "The Thousand Sunny",
+            "info" : "Thanks for Watching 😄"
+        },
+        {
+            "name" : "stop",
+            "info" : "stop"
+        }
+    ]
+}

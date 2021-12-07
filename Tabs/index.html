@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Tabs</title>
+</head>
+<link rel="shortcut icon" href="./Images/icon.png">
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1 id="heading">Seasons</h1>
+        <p id="heading-info">A season is a period of the year that is distinguished by special climate conditions</p>
+    </header>
+    <main>
+        
+        <div class="image-container">
+            <img src="Images/summer.jpg" class="image show" data-imgid="summer" alt="summer">
+            <img src="Images/monsoon.jpg" class="image" data-imgid="monsoon" alt="monsoon">
+            <img src="Images/winter.jpg" class="image" data-imgid="winter" alt="winter">
+        </div>
+
+        <div class="tabs-container">
+
+            <div class="btn-container">
+                <button class="tab-btns active" data-id="summer">Summer</button>
+                <button class="tab-btns" data-id="monsoon">Monsoon</button>
+                <button class="tab-btns" data-id="winter">Winter</button>
+            </div>
+
+            <div class="tab-info-container">    
+                <div class="tab-info show" id="summer">
+                    <p class="tab-para">Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice</p>
+                </div>
+
+                <div class="tab-info" id="monsoon">
+                    <p class="tab-para">Monsoon or rainy season, lasting from June to September. The season is dominated by the humid southwest summer monsoon, which slowly sweeps across the country beginning in late May or early June. Monsoon rains begin to recede from North India at the beginning of October. South India typically receives more rainfall</p>
+                </div>
+
+                <div class="tab-info" id="winter">
+                    <p class="tab-para">In winter we have colder weather, sometimes snow and frost, the trees have no leaves and the amount of time it is light during the day is at its shortest. In spring the weather usually turns warmer, trees begin to grow their leaves, plants start to flower and young animals such as chicks and lambs are born.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

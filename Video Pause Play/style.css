@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(38,45,49);
+}
+.video-player{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+video{
+    width : 100%;
+}
+h1,button{
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    margin: 15px;
+    z-index: 2;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+button{
+    bottom: 40px;
+    left: 20px;
+    height: 35px;
+    width : 85px;
+    font-size: 20px;
+    color : black;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border:1px solid white;
+    transition : .3s ease;
+}
+button:hover{
+    color: white;
+    background-color : black;
+    border:1px solid black;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="date"></h1>
+
+    <form name="myForm" onsubmit="return validateform()">
+        <label>ENTER NAME : </label>
+        <input name="name" type="text" placeholder="Enter Here">
+        <button type="submit">DONE</button>
+    </form>
+
+    <h1>JavaScript Validation</h1>
+    <h2>Please input a number between 1 and 10:</h2>
+    <input type="text" id="numb">
+    <button type="submit" onclick="numbervalidation()" >SUBMIT</button>
+    <p id=demo></p>
+
+    
+    <script>
+        document.getElementById("date").innerHTML="date = "+ Date();  //only works with innerHTML
+        document.write(Date());   //writes current Date directly and it always remain at bottom of content
+       
+        function validateform()
+        {
+            let x=document.forms["myForm"]["name"].value
+            if (x=="") {
+                alert("PLEASE ENTER A NAME 😔")
+            }
+            else{
+                alert("WELL DONE 😆")
+            }
+        }
+
+        function numbervalidation()
+        {
+            let x=document.getElementById("numb").value
+            let text;
+            if (isNaN(x) || x<1 || x>10) {
+                text="invalid"
+            }else{
+                text="valid"
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

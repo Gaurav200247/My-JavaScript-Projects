@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetIntervals</title>
+</head>
+<script src="https://kit.fontawesome.com/ff8a115eb5.js" crossorigin="anonymous"></script>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        background-color: skyblue;
+        color: black;
+        margin: 5px;
+        overflow: hidden;
+        font-size: 30px;
+        letter-spacing: 5px;
+        height: 60px;
+        padding: 5px;
+    }
+    i{
+        transform: rotateY(180deg);
+    }
+    button{
+        background-color: black;
+        color: gold;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid gold;
+        cursor: pointer;
+        transition: .3s;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: goldenrod;
+        color: black;
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <h1>Set TimeInterval</h1>
+    <p class="para"></p>
+    <button onclick="startinterval()">start (setInterval)</button>
+    <button onclick="stopinterval()">stop (clearInterval)</button>
+
+    <h1>Set timeOut</h1>
+    <h3>background-color changes in 2 seconds after clicking</h3>
+    <button onclick="starttimeout()">click here (setTimeout)</button>
+    
+    <script>
+        // set interval
+        var para = document.querySelector('.para')
+        var interval;
+
+        function startinterval() {
+            interval = setInterval(() => {
+                para.innerHTML += `<i class="fas fa-car-side"></i>`; 
+                var x = Math.floor(Math.random()*255);
+                var y = Math.floor(Math.random()*255);
+                var z = Math.floor(Math.random()*255);
+                document.body.style.backgroundColor=`rgb(${x},${y},${z})`;
+            }, 500);
+        }
+        // clear interval
+        function stopinterval() {
+            clearInterval(interval);
+        }
+
+        // set timeout
+        function starttimeout() {
+            
+            setTimeout(() => {
+                var x = Math.floor(Math.random()*255);
+                var y = Math.floor(Math.random()*255);
+                var z = Math.floor(Math.random()*255);
+                document.body.style.backgroundColor=`rgb(${x},${y},${z})`;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
